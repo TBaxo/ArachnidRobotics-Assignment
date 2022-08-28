@@ -67,7 +67,7 @@ export class RobotSpiderMk2 implements IRobotSpider {
     private turn(command: string) { 
 
         //Added this as it corrects for negative numbers e.g. -1 mod 4 becomes 3
-        const mod = (n, m) => ((n % m) + m) % m;
+        const mod = (n: number, m: number) => ((n % m) + m) % m;
 
         if (command === "R")
         { 
