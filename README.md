@@ -18,10 +18,10 @@ You will then be asked to enter the starting co-ordinates and a set of commands 
 
 # Assumptions
 
-For Assumptions made for the MK1 robot go [here](https://github.com/TBaxo/ArachnidRobotics-Assignment/blob/main/classes/RobotSpiderMk1.md)
+For assumptions made for the MK1 robot go [here](Classes/RobotSpiderMk1.md)
 
 
-For Assumptions made for the MK2 robot go [here](https://github.com/TBaxo/ArachnidRobotics-Assignment/blob/main/classes/RobotSpiderMk2.md)
+For ssumptions made for the MK2 robot go [here](Classes/RobotSpiderMk2.md)
 
 
 
