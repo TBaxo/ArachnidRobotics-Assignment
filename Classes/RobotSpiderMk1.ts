@@ -1,4 +1,4 @@
-import * as readline from "readline"
+import { IRobotSpider } from "../interfaces/IRobotSpider";
 import { Point } from "./Point";
 
 
@@ -12,21 +12,19 @@ const robotActionsDictionary : Record<string, Point> = {
 
 const actionKeys = Object.keys(robotActionsDictionary);
 
-export class RobotSpiderMk1 {
+export class RobotSpiderMk1 implements IRobotSpider {
     position: Point;
 
     constructor(startingPosition : Point) {
         this.position = startingPosition;
     }
 
-    applyCommands(commands: string) { 
+    public applyCommands(commands: string) : void { 
         
         for (const command of commands)
         { 
             if (!(actionKeys.includes(command))) throw "Invalid Action";
-            this.position.Add(robotActionsDictionary[command]);
+            this.position = this.position.Add(robotActionsDictionary[command]);
         }
-        
-        
     }
 }  
