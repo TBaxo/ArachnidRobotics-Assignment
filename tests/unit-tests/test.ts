@@ -1,6 +1,6 @@
 import { expect, test } from '@jest/globals';
-import { Point } from '../../Classes/Point';
-import { RobotSpiderMk1 } from '../../Classes/RobotSpiderMk1';
+import { Point } from '../../classes/Point';
+import { RobotSpiderMk1 } from '../../classes/RobotSpiderMk1';
 
 /*
 
