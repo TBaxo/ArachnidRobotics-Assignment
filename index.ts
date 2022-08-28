@@ -1,9 +1,11 @@
 import { Point } from "./classes/Point";
-import { RobotSpiderMk1 } from "./classes/RobotSpiderMk1";
 import { countCharacters } from "./Utils/countCharacters";
 import PromptSync, {  } from "prompt-sync";
 import { IRobotSpider } from "./interfaces/IRobotSpider";
-import { Heading, RobotSpiderMk2 } from "./classes/RobotSpiderMk2";
+import { RobotSpiderMk1 } from "./classes/RobotSpiderMk1";
+import { RobotSpiderMk2 } from "./classes/RobotSpiderMk2";
+import { RobotSpiderMk3 } from "./classes/RobotSpiderMk3";
+import { Heading } from "./interfaces/IRotatingRobotSpider";
 
 const prompt = PromptSync();
 
@@ -11,10 +13,12 @@ const prompt = PromptSync();
 const getRobot = (robotVersion: number, startPosition: Point): IRobotSpider => { 
     if (robotVersion == 1) return new RobotSpiderMk1(startPosition);
 
-    return new RobotSpiderMk2(startPosition, Heading.North);
+    if (robotVersion == 2) return new RobotSpiderMk2(startPosition, Heading.North);
+
+    return new RobotSpiderMk3(startPosition, Heading.North);
 }
 
-const robotVersion: number = Number(prompt('What version of spider are you running (currently support 1 and 2): '));
+const robotVersion: number = Number(prompt('What version of spider are you running (currently support 1, 2 abd 3(default)): '));
 if (Number.isNaN(robotVersion)) throw "Invalid X co-ordinate";
 
 const startingPositionX: number = Number(prompt('What is the starting x co-ordinate?: '));
