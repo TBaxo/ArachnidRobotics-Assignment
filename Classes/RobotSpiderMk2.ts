@@ -1,9 +1,8 @@
 import { cp } from "fs";
 import { Point } from "./Point";
 import { IRobotSpider } from "../interfaces/IRobotSpider";
+import { Heading, IRotatingRobotSpider } from "../interfaces/IRotatingRobotSpider";
 
-
-export enum Heading { North, East, South, West }
 
 const robotActionsDictionary : Record<Heading, Point> = {
     [Heading.North]:  new Point(0, 1),
@@ -15,7 +14,7 @@ const robotActionsDictionary : Record<Heading, Point> = {
 
 const actionKeys = Object.keys(robotActionsDictionary);
 
-export class RobotSpiderMk2 implements IRobotSpider {
+export class RobotSpiderMk2 implements IRobotSpider, IRotatingRobotSpider {
     heading: Heading
     position: Point;
 
