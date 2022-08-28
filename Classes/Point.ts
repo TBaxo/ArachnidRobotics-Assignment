@@ -9,10 +9,9 @@ export class Point{
     }
 
 
-    public Add(point: Point)
+    public Add(point: Point) : Point
     { 
-        this.x += point.x;
-        this.y += point.y;
+        return new Point(this.x + point.x, this.y + point.y);
     }
 
 
