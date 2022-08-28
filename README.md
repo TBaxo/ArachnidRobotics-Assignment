@@ -35,3 +35,8 @@ I installed jest and ts-jest for handling unit tests, these can be run with yarn
 ```
 yarn run test
 ```
+
+# Current Issues
+After re-reading the spec, it's clear the space (0,0) was meant to be the bottom of the grid instead of the top. 
+
+An issue has been raised for this, which you can track [here](https://github.com/TBaxo/ArachnidRobotics-Assignment/issues/1).
