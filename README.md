@@ -9,7 +9,12 @@ Firstly, open up a console and navigate to the working directly. install all dep
 yarn install
 ```
 
+Now you can run the following command which can be fond in `package.json`:
+```
+yarn run start
+```
 
+You will then be asked to enter the starting co-ordinates and a set of commands in the format given in the spec.
 
 # Assumptions
 
