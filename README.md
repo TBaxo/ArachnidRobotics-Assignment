@@ -9,7 +9,7 @@ Firstly, open up a console and navigate to the working directly. install all dep
 yarn install
 ```
 
-Now you can run the following command which can be fond in `package.json`:
+Now you can run the following command which can be foUnd in `package.json`:
 ```
 yarn run start
 ```
@@ -18,16 +18,11 @@ You will then be asked to enter the starting co-ordinates and a set of commands 
 
 # Assumptions
 
-## Interpretting Commands
-The first assumption I had to make was how the different commands interacted with the spider robot, I have gone with the following:
+For Assumptions made for the MK1 robot go [here](https://github.com/TBaxo/ArachnidRobotics-Assignment/blob/main/classes/RobotSpiderMk1.md)
 
-Assuming that (0,0) is the top left of a quadrant of the space:
-```
-(0,0) F = (0, 1);
-(0,0) B = (0, -1);
-(0,0) R = (1, 0);
-(0,0) L = (-1, 0);
-```
+
+For Assumptions made for the MK2 robot go [here](https://github.com/TBaxo/ArachnidRobotics-Assignment/blob/main/classes/RobotSpiderMk2.md)
+
 
 
 # Testing
@@ -36,7 +31,3 @@ I installed jest and ts-jest for handling unit tests, these can be run with yarn
 yarn run test
 ```
 
-# Current Issues
-After re-reading the spec, it's clear the space (0,0) was meant to be the bottom of the grid instead of the top. 
-
-An issue has been raised for this, which you can track [here](https://github.com/TBaxo/ArachnidRobotics-Assignment/issues/1).
