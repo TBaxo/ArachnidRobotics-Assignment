@@ -3,7 +3,7 @@
 
 ## Assumptions
 
-All the assumptions made in for the Mk2 are also made for the Mk3 robot. You can find the documenation to that [here](Classes/RobotSpiderMk2.md).
+All the assumptions made in for the Mk2 are also made for the Mk3 robot. You can find the documenation to that [here](./RobotSpiderMk2.md).
 
 ### What happens when you run out of boost?
 In this case the robot will keep going on, but will be clamped at moving it's basic speed.
