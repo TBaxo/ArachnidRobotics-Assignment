@@ -4,7 +4,7 @@
 
 
 # How to run 
-Firstly, open up a console and navigate to the working directly. install all dependencies using yarn like so:
+Firstly, open up a console and navigate to the working directory. install all dependencies using yarn like so:
 ```
 yarn install
 ```
